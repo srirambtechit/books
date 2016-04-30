@@ -1,0 +1,19 @@
+BMIPP3326H
+
+
+serializable
+
+1. class has to implement java.io.Serializable
+2. class has to override methods like writeObject(), readObject()
+3. All instance variable has to copied by default but if any reference object presents in class, which needs to manually serialized in writeObject method
+4. readObject() method read data in which order wirteObject() writes
+5. transient and static modifier used to restrict serialization to specific filed.
+6. To avoid serialization for child of parent (which implements Serializable), writeObjcet() should include "throw new NotSerializableException();" in child class
+7. serialVersionUID is used to control version of class file while doing serialization and de-serialization process.
+
+
+private void writeObject(java.io.ObjectOutputStream oos) throws java.io.IOException {}
+private void readObject(java.io.ObjectInputStream ooi) throws java.io.IOException, java.lang.ClassCastException {}
+
+
+9962333212

@@ -1,0 +1,140 @@
+Java Language Environment
+
+    Object Oriented
+    Platform Independent
+    Automatic Memory Management
+    Compiled / Interpreted approach
+    Robust
+    Secure
+    Dynamic Linking
+    MultiThreaded
+    Built-in Networking
+
+Java Fundamentals
+
+    Data types
+    Operators
+    Control Statements
+    Arrays
+    Enhanced for-loop
+    Enumerated types
+    Static import
+    Auto boxing
+    C-style formatted I/O
+    Variable arguments
+
+Essentials of Object-Oriented Programming
+
+    Object and Class Definition
+    Using encapsulation to combine methods and data in a single class
+    Inheritance and Polymorphism
+
+Writing Java Classes
+
+    Encapsulation
+    Polymorphism
+    Inheritance
+    OOP in Java
+    Class Fundamentals
+    Using Objects
+    Constructor
+    Garbage Collection
+    Method Overloading
+    Method Overriding
+    Static Members
+    Understanding Interface
+    Using Interfaces class
+
+Packages
+
+    Why packages
+    Understanding Classpath
+    Access modifiers and their Scope
+
+Exception Handling
+
+    Importance of Exception Handling
+    Exception Propagation
+    Exception Types
+    Using try and catch
+    throw, throws, finally
+    Writing User defined Exceptions
+
+I/O Operations in Java
+
+    Byte Oriented Streams
+    File Handling
+    Readers and Writers
+
+Multithreaded Programming
+
+    Introduction to Multi-Threading
+    Understanding Threads and its States
+    Java Threading Model
+    Thread class and Runnable Interface
+    Thread Priorities
+    Thread Synchronization
+    Inter thread Communication
+    Preventing Deadlocks
+
+DEVELOPING Java APPS
+
+    Defining a Solution without Writing Code
+    Organizing a Concept Solution
+    Creating a Program Skeleton
+    Defining Error Checking Requirements
+    Introduction to Application Security
+
+Network Programming
+
+    Introduction to Networking
+    InetAddress
+    URL
+    TCP Socket and ServerSocket
+    UDP Socket
+    Developing a Chat Application
+
+Java Util Package / Collections Framework
+
+    Collection and Iterator Interface
+    Enumeration
+    List and ArrayList
+    Vector
+    Comparator
+    Set Interface and SortedSet
+    Hashtable
+    Properties
+
+Generics
+
+    Introduction to Generics
+    Using Built-in Generics Collections
+    Writing Simple Generic Class
+    Bounded Generics
+    Wild Card Generics
+
+Inner Classes
+
+    Nested Top Level Classes
+    Member Classes
+    Local Classes
+    Anonymous Classes
+
+Abstract Window Toolkit
+
+    Graphics
+    Color and Font
+    AWT Components/Controls
+    Event Handling and Layouts
+
+Swing Programming
+
+    Introduction to Swing and MVC Architecture
+    Light Weight Component
+    Swing Hierarchy
+    Atomic Components e.g. JButton, JList and more
+    Intermediate Container e.g. JPanel, JSplitPane and more
+    Top-Level Container e.g. JFrame and JApplet
+    Swing Related Events
+
+

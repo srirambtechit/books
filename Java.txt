@@ -1,0 +1,228 @@
+Spring 3.0
+ 
+Dependency Injection
+---------------------
+    When you go and get things out of the refrigerator for yourself, you can cause problems. You might leave the door open, you might get something Mommy or Daddy doesn't want you to have. You might even be looking for something we don't even have or which has expired.
+ 
+    What you should be doing is stating a need, "I need something to drink with lunch," and then we will make sure you have something when you sit down to eat.
+ 
+ 
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+                                                // set this to a MS Access DB you have on your machine
+                                                String filename = "D:/CRM/CRMDB.accdb";
+                                                String database = "jdbc:odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=";
+                                                database += filename + ";DriverID=22;READONLY=true}"; // add
+                                                // now we can get the connection from the DriverManager
+                                                Connection con = DriverManager.getConnection(database, "", "");
+                                                Statement st = con.createStatement();
+ 
+                                                ResultSet rs = st
+                                                                                .executeQuery("select * from CRM_DEAL where id=" + uid);
+ 
+ 
+SCJP
+ 
+http://scjpquestionbank.blogspot.in/2012/12/exam-c.html
+http://www.braindumps.org/Oracle/1Z0-852/1Z0-852-1.htm
+http://scjptestquestion.blogspot.in/
+ 
+Points to remember
+------------------
+1. static context cant be refered with this or super keyword
+2. ((TestA)new TestB()) which is equal to TestA a = new TestB() here TestB --> TestA
+3. for TreeSet collection, object should implements Comparable
+ 
+ 
+Java Memory Model
+-----------------
+                2 Type of Memory
+                
+Stack memory - Memory address of Local variable mapped here 
+Heap memory -  Memory address of Heap variable mapped here
+ 
+JVM Parameters:
+1. java command used to insert a program to JVM
+Ex: java Pgm 
+ 
+2. JVM args
+                -Xms - starting heap space
+                -Xmx - Maximum heap space
+                -Xss - 
+                
+3. If no memory left in Stack, JVM throw
+                StackOverFlowError
+                
+4. If no memory left in Heap, JVM throw
+                OutOffMemoryError
+                
+5. Size of stack memory << Size of Heap memory
+ 
+6.            Stack memory visible to own Thread
+                Object in heap visible to all Thread
+ 
+ 
+final variable
+--------------
+1. final class can't be inherited
+Ex:
+                final class Test {}
+ 
+2. final method can't overriden
+Ex:
+                class Test {
+                                public final void testMethod(){}
+                }
+                
+3. final blank variable(final instanc variable without initialization) must be initialized in construtor
+Ex:
+                class Test {
+                                final int count;
+                                test(){
+                                                count = 6;
+                                }
+                }
+ 
+4. final instance variable 
+ 
+5. final local vairable
+ 
+6. final local parameter variable
+Ex:
+                class Test {
+                                void testMethod(final int count){}
+                }
+ 
+                
+static and instance block
+-------------------------
+static block will be executed at only once when the calss loaded into JVM
+whereas instance block will be executed whenever the new instance created in JVM
+ 
+Ex: static block   
+                static {
+                                //code goes here
+                }              
+ 
+Ex: instance block            
+                {
+                                //code goes here 
+                }
+ 
+Building blocks of Object class
+-------------------------------
+ 
+ 
+Versatility            of equals(), hashCode(), toString() methods
+toString() - to represent textually an object
+equals() - to compare object meaningfully
+hashCode() - to enhance searching on Collection framework
+ 
+ 
+About Class object:
+ 
+* before you access a static field, you need the class, so it'll be circular if the class is a field. actually, A.class is simply compiled to Class.forName("A")
+ 
+* The type of String.class is Class<String>. Use Class<?> if the class being modeled is unknown.
+ 
+* Instances of the class Class represent classes and interfaces in a running Java application. An enum is a kind of class and an annotation is a kind of interface. Every array also belongs to a class that is reflected as a Class object that is shared by all arrays with the same element type and number of dimensions. The primitive Java types (boolean, byte, char, short, int, long, float, and double), and the keyword void are also represented as Class objects.
+ 
+* Class has no public constructor. Instead Class objects are constructed automatically by the Java Virtual Machine as classes are loaded and by calls to the defineClass method in the class loader. 
+ 
+1. "shallow copy" vs "deep copy"
+2. How is Hashtable working?
+3. How is ClassLoader wokring?
+4. How is SecurityManager working?
+5. Use of Comparator<T> or Comparable<T> - To sort of different fields, we need multiple comparators.
+ 
+ 
+ 
+ 
+Pgms:
+ 
+System.out.println(16d/-0.0); //prints "-Infinity"
+System.out.println(16d/0.0); //prints "Infinity"
+System.out.println(16/0.0); //throws java.lang.ArithmeticException: / by zero
+System.out.println(Integer.valueOf("101011", 2)); //prints "43"
+ 
+ 
+Access modifier's accessibility precedence from low to high
+ 
+private   - more restrictive
+default   - package level restrictive
+protected - Subclass restriction
+public    - No restriction
+ 
+ 
+ 
+ 
+To imporove performance on String objects:
+1. Create strings as literals instead of creating String objects using 'new' key word whenever possible
+2. Use String.intern() method if you want to add number of equal objects whenever you   create String objects using 'new' key word.
+3. + operator gives best performance for String concatenation if Strings resolve at compile time
+4. StringBuffer with proper initial size gives best performance for String concatenation if Strings resolve at run time.
+Ref:http://www.precisejava.com/javaperf/j2se/StringAndStringBuffer.htm
+ 
+Performance on object creation
+* Never create objects just for accessing a method.
+* Whenever you are done with an object make that reference null so that it is eligible for garbage collection.
+* Never keep inheriting chains long since it  involves calling all the parent constructors 
+  all along the chain until the constructor for java.lang.Object is reached.
+* Use primitive data types rather than using wrapper classes.
+* Whenever possible avoid using class variables, use local  variables since accessing local variables is faster than accessing class variables.
+* Use techniques such as lazy evaluation. Lazy evaluation refers to the technique of avoiding certain 
+  computations until they are absolutely necessary. This way we put off certain computations that may never need to be done at all.
+* Another technique is Lazy object creation : i.e. delaying the memory allocation to an object till it is  not being put into use. 
+  This way a lot of memory is saved till the object is actually put in to use.
+1. Avoid creating objects in a loop.
+2. Use String literals instead of String objects (created using the 'new' keyword) if the content is same.
+3. Make used objects eligible for garbage collection.
+4. Do not keep inheritance chains long.
+5. Accessing local variables is faster than accessing class variables
+6. Use lazy evaluation, lazy object creation whenever possible.
+ 
+Performance on loops
+1. Use integer as loop index variable.
+2. Use System.arraycopy() to copy arrays.
+3. Avoid method calls in loops .
+4. It is efficient to access variables in a loop when compared to accessing array elements.
+5. Compare the termination condition in a loop with zero if you use non-JIT or HotSpot VMs.
+6. Avoid using method calls to check for termination condition in a loop
+7. When using short circuit operators place the expression which is likely to evaluate to false on extreme left if the expresion contains &&.
+8. When using short circuit operators place the expression which is likely to evaluate to true on extreme left if the expresion contains only ||.
+9. Do not use exception handling inside loops.
+ 
+ 
+Performance on Exception handling
+1. Be specific while handling the exception in your catch block.
+2. Be specific while throwing exception in your throws clause.
+3. Do not use Exception Handling to control programming flow.
+4. Very little overhead is imposed by using exception handling mechanism unless an exception occurs or thrown a new exception object explicitly.
+5. Always use the finally block to release the resources to prevent resource leaks.
+6. Handle exceptions locally wherever possible.
+7. Do not use Exception handling in loops.
+ 
+Performance on Serialization
+1. Use 'transient' key word for unnecessary variables that need not be read from/written into streams.
+2. When you write RMI, EJB or any other technologies that uses built in Serialization to pass objects through network, 
+   use 'transient' key word for unnescessary variables.
+3. Class (static) variables ignores by Serialization process like 'transient' variables.
+ 
+Performance on Collection Objects
+Lists:
+1. Use ArrayList with proper initialization if you don't want thread safe for the collection whenever you  add/remove/access objects at end and middle of collection.
+2. Use Vector with proper initialization if you want thread safe for the collection whenever you  add/remove/access objects at end and middle of collection.
+3. Use LinkedList if you don't want thread safe for the collection whenever you  add/remove/access objects at beginning of collection.
+4. Use synchronized LinkedList if you want thread safe for the collection whenever you add/remove/access objects at beginning of collection.
+5. Use ListIterator than Iterator and Enumeration for List types
+Sets:
+1. Use HashSet for maintaining unique objects if you don't want thread safe for the collection for all basic(add/remove/access) 
+   operations otherwise use synchronized HashSet for thread safe.
+2. Use TreeSet for ordered and sorted set of unique objects for non-thread safe collection otherwise use synchronized TreeSet for thread safe
+Maps:
+1. Use HashMap for non-thread safe map collection otherwise use Hashtable for thread safe collection.
+2. Use TreeMap for non-thread safe ordered map collection otherwise use synchronized TreeMap for thread safe.
+ 
+Performance on IO operation
+1. Reading and writing data using default behavior of some streams that is byte by byte  read/write causes slow performance.
+2. Buffered input streams and buffered output streams increase performance.
+3. Custom buffering increases performance significantly.

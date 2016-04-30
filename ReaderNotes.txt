@@ -1,0 +1,16 @@
+Java
+
+ - Declaring instance variable with access modifier private is known as data hiding or information 
+ hiding.
+ 
+ - Each public class declaration must be stored in a file having the same name as the class and 
+ ending with the .java filename extension;
+ 
+ - Why main() is static? - In Java world, no way to invoke a method of class (here it is main()) 
+ without object, so static is the only option available for JVM. Assume that JVM has to call a main()
+  without static modifier, it needs to create an object of the class which may tend to end up 
+ with impossible situation like a class doesn't have default constructor, it has only parameterized 
+ constructor. Eventually, JVM can't find what input to give to the constructor of the class (where 
+ main() method resides) in order to create object for calling main() method.
+ 
+ 

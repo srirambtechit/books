@@ -1,0 +1,50 @@
+RDBMS:
+- File based data
+- Architecture
+- Why?
+- Table or Relation
+- Column
+- Joins
+- View
+- DDL/DML
+- Transaction
+
+JDBC:
+1. Components
+2. Connections
+3. Data types
+4. Drivers
+5. Databases
+6. Result sets
+7. Stored procedures
+8. Statements
+9. Batch commands
+10. Transactions
+11. CRUD commands
+12. Java 8
+13. Sql libraries built upon JDBC
+14. Unit Testing
+15. Summary
+16. Download
+17. Links 
+
+Components:-
+- application connected with database
+- java.sql.DriverManager or javax.sql.DataSource
+- Connection pool impl like C3P0 or DBCP
+- Stored Procedures
+- Callable Statements
+- Batch Processing
+
+Database:
+- Difference between DBMS & RDBMS?
+
+SQL:
+- What is SQL?
+- 
+
+JDBC:
+- What is JDBC?
+- 
+
+Hibernate QuestionSet:

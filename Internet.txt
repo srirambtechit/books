@@ -1,0 +1,17 @@
+Internet
+--------
+
+World Wide Web
+ - inventor is Tim Berners-Lee
+ - Hyper linking 2 text which massively forms internet
+ - documents or web resources are identified by URLs accessed over internet
+
+URI - Uniform Resource Identifier
+ scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+
+URL - Uniform Resource Locator
+ - It is a URI
+ 
+DNS - Domain Name System 
+
+

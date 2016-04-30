@@ -1,0 +1,29 @@
+HTTP Protocol
+-------------
+
+Internet programming terminology
+- What is HTTP?
+- Why HTTP is stateless?
+- What are HTTP Methods? Name few? Ans: GET, POST, PUT, DELETE, OPTIONS, HEAD, TRACE, CONNECT
+- Idempotent and Safe methods in HTTP Methods? Explain.
+- HTTP Request and HTTP Response? Explain.
+- HTTP Message status code, list few. Ans: 200 - OK, 404 - FileNotFound, 500 - InternalServerError, etc. (1xx - Information, 2xx - Success, 3xx - Redirection, 4xx - Client Error, 5xx - Server Error)
+- What is difference between URI and URL?
+- What is Protocol?
+- What is TCP/IP?
+- What is IP address?
+- What is port number?
+- What is SSL/TSL? 
+- What is client-server architecture? How it works?
+- What do you know about HTTP Header?
+- What is MIME Type?
+
+
+HTTP - Hyper Text Transfer Protocol 
+
+MIME - Multi-purpose Internet Mail Extensions.
+ - It classify file types on internet
+ - Internet programs such as WebServer and Browser can transfer files based MIME irespective to OS
+ - There are 2 parts: type & subtype
+ - Example: application/pdf
+

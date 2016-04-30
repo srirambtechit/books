@@ -1,0 +1,467 @@
+Java Training in interview perspective
+
+Course Aspect:-
+===============
+1. Know each other
+2. Course outline
+   - Java recap
+   - Basic programming & coding exercise
+   - Case study (Employee-Department)
+   - Current affairs about Java
+   - Basic knowledge on Database SQL 
+   - Interviewer expectation
+   - Java API & Concetps - Multi-Threading, IO, Collection, Serialization
+
+Java Question set:-
+=================
+OOPs
+- Class
+- Object
+- Encapsulation
+- Abstraction
+- Polymorphism
+- Inheritance
+
+JDK
+- How Java platform independent?
+- JDK, JRE, JVM difference? Platform independent?
+- How to run and compile Java programs?
+- What is JVM?
+- What is JIT?
+
+
+Java features & language:
+- Difference between Abstract class & Interface?
+- Why Java doesn't support operator overloading?
+- Why Java doesn't support pointers?
+- Can you override static method in Java? if I create same method in subclass is it compile time error? Ans: No, method hiding would happend
+- what is equals() and hashCode()? Why?
+- Difference between equals() and '=='
+
+String
+- Why String is immutable?
+- Why character array is better than String for Storing password in Java 
+- Difference between String, StringBuffer and StringBuilder
+
+
+Collection
+- What is Collection ? What is a Collections Framework ? What are the benefits of Java Collections Framework ?
+- What is the root interface in collection hierarchy ? 
+- What is the difference between Collection and Collections ?
+- Which collection classes are synchronized or thread-safe ?
+- Name the core Collection  interfaces ?
+- What is the difference between List and Set ?
+- What is the difference between Map and Set ?
+- What are the classes implementing List and Set interface ?
+- What is an iterator ?
+- What is the difference between Iterator and Enumeration ?
+- Which design pattern followed by Iterator ?
+- Which methods you need to override to use any object as key in HashMap ?
+- What is the difference between Queue and Stack ?
+- How to reverse the List in Collections ?
+- How to convert the array of strings into the list ?
+
+-
+- What is the difference between HashSet and TreeSet ?
+- What is difference between Vector and ArrayList in Java?
+- What is difference in LinkedList and ArrayList in Java?
+- What is iterator?
+- What is difference between fail-fast and fail-safe Iterator in Java? Ans: fail-fast ConcurrentModificationException structurally modify, add, remove from collection
+- Difference between Comparable and Comparator?
+- How does HashMap work in Java?
+- What is the difference between poll() and remove() method of Queue interface? Ans: remove() throw Exception, poll() not
+- How do you remove an entry from a Collection? and subsequently what is the difference between the remove() method of Collection and remove() method of Iterator, which one you will use while removing elements during iteration?
+- What is the difference between Synchronized Collection and Concurrent Collection?
+- What is the difference between Iterator and Enumeration?
+- How does HashSet is implemented in Java, How does it use Hashing?
+- What do you need to do to use a custom object as a key in Collection classes like Map or Set? Ans: equals() hashCode() compareTo()
+- The difference between HashMap and Hashtable? 
+- When do you use ConcurrentHashMap in Java? 
+- What is the difference between Set and List in Java? 
+- How do you Sort objects on the collection?
+- What is the difference between HashMap and HashSet?
+- What is NavigableMap in Java? What is a benefit over Map? 
+- Which one you will prefer between Array and ArrayList for Storing object and why?
+- Can we replace Hashtable with ConcurrentHashMap?
+- When does ConcurrentModificationException occur on iteration?
+- Difference between Set, List and Map Collection classes?
+
+Exception Handling
+- What is difference between checked and unchecked Exception in Java.
+- Difference between throw and throws in Java?
+- Difference between Exception and RuntimException?
+
+Multi Threading
+- What is difference between Runnable and Thread in Java ?
+- What happens if you don't call wait and notify from synchronized block?
+- Why wait and notify  called from synchronized method in Java?
+- Write code to solve producer consumer problem in Java.
+- Write Java program to create deadlock in Java and fix it ?
+- You have thread T1, T2 and T3, how will you ensure that thread T2 run after T1 and thread T3 run after T2? Ans: join
+- What are differences between wait and sleep method in java?
+- Write code to implement blocking queue in Java?
+- What is atomic operation? What are atomic operations in Java? Ans: synchronized
+- What is volatile keyword in Java? How to use it? How is it different from synchronized method in Java?
+- What is race condition? How will you find and solve race condition?
+- How will you take thread dump in Java? How will you analyze Thread dump? Ans: kill -3, or JConsole
+- Why we call start() method which in turns calls run() method, why not we directly call run() method ?
+- How will you awake a blocked thread in java?
+
+
+ 1)  Difference between green thread and native thread in Java?
+ 2)  Difference between thread and process?
+ 3)  What is context switching in multi-threading?
+ 4)  Difference between deadlock and livelock, deadlock and starvation?
+ 5)  What thread-scheduling algorithm is used in Java?
+ 6)  What is thread-scheduler in Java?
+ 7)  How do you handle un-handled exception in thread?
+ 8)  What is thread-group, why its advised not to use thread-group in Java?
+ 9)  Why Executor framework is better than creating and managing thread by application ?
+ 10) Difference between Executor and Executors in Java?
+ 10) How to find which thread is taking maximum cpu in windows and Linux server?
+
+Serialization
+- What is the difference between Serializable and Externalizable interface in Java? - writeExternal() and readExternal()
+- Which methods are used during Serialization and DeSerialization process in Java?
+- How many methods Serializable has? If no method then what is the purpose of Serializable interface?
+- What happens if your Serializable class contains a member which is not  serializable? How do you fix it? 
+- What is serialVersionUID? What would happen if you don't define this?
+- While serializing you want some of the members not to serialize? How do you achieve it? Ans: NotSerializableException
+- Can you Customize Serialization process or can you override default Serialization process in Java? Ans: writeObejct() and readObject() in your class
+- Suppose super class of a new class implement Serializable interface, how can you avoid new class to being serialized? Ans: writeObject() and readObject() method in your Class and need to throw NotSerializableException
+- If a class is Serializable but its super class in not, what will be the state of the instance variables inherited from super class after deserialization?
+- Suppose you have a class which you serialized it and stored in persistence and later modified that class to add a new field. What will happen if you deserialize the object already serialized? Ans: Java Serialization API will throw java.io.InvalidClassException
+- Can we transfer a Serialized object vie network?
+- Which kind of variables is not serialized during Java Serialization?
+
+
+Program
+- Write a program in Java to check if a number is even or odd in Java? 
+- How to Swap two numbers without using third variable in Java?
+- How to find if a number is power of 2 in Java?
+- Write a Java program to calculate Factorial of a number in Java?
+- Write a Java program to find if a number is prime number or not
+- Write a Java program to check if a number is Armstrong or not ? Ans 153 - true, 123 - false
+- Write code to print Fibonacci series in Java?
+- Write program to sort an integer array without using API methods?
+- Write Java program to check if a number is palindrome in Java? 
+- Print following structure in Java?
+  *
+  * *
+  * * *
+  * * * *
+  * * *
+  * *
+  *
+- Write Java program to reverse String in Java without using StringBuffer?
+- Write a Java program to replace certain characters from String
+- Write a Java program that prints the numbers from 1 to 50. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
+- Write a Comparator in Java to compare two employees based upon there name, departments and age?
+- Design vending machine in Java which vends Item based upon four denomination of coins and return coin if there is no Item.
+- Write a Java program to prevent deadlock in Java ?
+- Write Java program to reverse String in Java without using API functions ?
+- Create a Java program to find middle node of linked list in Java in one pass? 
+- How to find if a linked list contains cycle or not in Java?
+- Implement Producer Consumer design Pattern in Java using wait, notify and notifyAll method in Java?
+
+Design Pattern
+- What is Singleton?
+- How to create thread-safe singleton in Java using double checked locking?
+
+
+Common question on Core Java
+============================
+- Java interview questions on this keyword
+- Default constructor vs no arg constructor
+- Method overloading interview questions
+- Is it possible to print message without using System.out.println()
+- Java program to restrict a class from creating not more than three objects 
+- Abstract class and abstract method interview questions and programs  
+- Interfaces allows constructors?
+- Interview Programs and questions on method overriding in java
+- Java interview questions on interfaces
+- Can we create private constructor in java  
+- 
+- Super keyword interview questions java 
+- How to check internet connection using java
+- What is encapsulation in java ? 
+- Java interview questions on final keyword
+- What is constructor chaining in java? 
+- Can we create static constructor in java 
+- Explain java data types with example programs
+- Inheritance programming interview questions 
+- Explain System.out.println()?
+- What happens When System.out.println(null)?
+- What is non static block in java 
+- Top 20 collection framework interview questions
+- Explain about Enhanced for loop in java
+- What are the oops concepts in java?  
+- Return statement in try catch block java
+- What is class and Object in java?
+- Can we Overload static methods in java
+- Can we Override static methods in java 
+- Java interview Questions on main() method 
+- Can we call super class static methods from sub class  
+- Can you define an abstract class without any abstract methods?
+- what are the differences between Final , finally finalize()?
+- What is Exception? difference between Exception and Error? and types of Exceptions?
+- Differences between method overloading and method overriding
+- How to write custom Exception?
+- What is serialization?
+- What is abstract class and interfaces ?
+- How to call garbage collector explicitly?
+- what is cloning? difference between shallow copy/shallow cloning and deep copy /deep cloning?
+- Difference between arraylist and vector?
+- Producer Consumer Problem
+- Different ways to create objects in java
+- Different places to define object in java
+- Why Java does not supports multiple inheritance?
+- Difference between enumeration and iterator and list iterator?
+- Difference between throw and throws in java
+- What is the difference between equals() method and == operator
+- Differences between HashMap and Hash-table
+- Convert string to date in java
+- Remove duplicate elements from an array
+- Can we create Thread without extending thread and Implementing Runnable
+- Comparable vs Comparator
+- Singleton Design Pattern
+- Why StringBuffer Class not overriding Equals() method?
+- Draw the Architecture Diagram of your current project.
+ 
+Q & A
+=====
+What is the purpose of serialization?
+Answer: Serialization is the conversion of an object to a series of bytes, so that the object can be easily saved to persistent storage or streamed across a communication link. The byte stream can then be deserialised – converted into a replica of the original object.
+
+What is the difference between JDK and JRE?
+Answer: Java Development Kit (JDK) is the most widely used Java Software Development Kit. Java Runtime Environment (JRE) is an implementation of the Java Virtual Machine which executes Java programs.
+
+What is the difference between equals() and “==” ?
+Answer: Equals is intended to check logical equality and == checks if both references point to same object. 
+a == b;        // Compares references, not values.
+a.equals(b);  // Compares values for equality.
+
+When will you use Comparator and Comparable interfaces?
+Answer: java.util.Comparator and java.lang.Comparable
+java.util.Comparator compares some other class’s instances, while java.lang.Comparable compares itself with another object.
+
+What is the wait/notify mechanism?
+Answer: This deals with concurrent programming. The wait() and notify() methods are designed to provide a mechanism to allow a thread to be block until a specific condition is met.
+However, java.util.concurrent should be used instead of wait() and notify() to reduce complexity.
+
+What is the difference between checked and unchecked exceptions?
+Answer:
+In general, unchecked exceptions represent defects in the program (bugs), which are normally Runtime exceptions.
+Furthermore, checked exceptions represent invalid conditions in areas outside the immediate control of the program.
+
+What is the difference between final, finally and finalize?
+Answer: “final” is the keyword to declare a constant AND prevents a class from producing subclasses. (Thanks Tom Ellis)
+“finally” is a block of code that always executes when the try block is finished, unless System.exit() was called. finalize() is an method that is invoked before an object is discarded by the garbage collector.
+
+What is the difference between web server and app server?
+Answer: A Web server exclusively handles HTTP requests, whereas an application server serves business logic to application programs through any number of protocols.
+
+Explain the Struts1/Struts2/MVC application architecture?
+Answer: Struts was adopted by the Java developer community as a default web framework for developing web applications
+The MVC(Model–view–controller) an application that consist of three distinct parts. The problem domain is represented by the Model. The output to the user is represented by the View. And, the input from the user is represented by Controller.
+
+What is the difference between forward and sendredirect?
+Answer: Both method calls redirect you to new resource/page/servlet. The difference between the two is that sendRedirect always sends a header back to the client/browser, containing the data in which you wanted to be redirected.
+
+How does a 3 tier application differ from a 2 tier one?
+Answer: Tiers are the physical units of separation or deployment, while layers are the logical units of separation.
+Imagine that you’re designing an e-commerce website. A 3 tier architecture would consist of web pages, a web server and a database, with the corresponding 3 layers being the “Presentation”, “Business Logic” and “Database” layers.
+If you take the database tier and layer out then your have a 2 tier architecture.
+
+How does the version control process works?
+Answer: Initiate, pull, branch, merge, commit, push.
+(Init) Make your own repository. (Pull) Download an existing repository from a url. (Branch / Merge )Make revisions. Commit then push your modifications.
+
+What is the difference between JAR and WAR files?
+Answer: JAR files (Java ARchive) allows aggregating many files into one, it is usually used to hold Java classes in a library.
+WAR files (Web Application aRchive) stores XML, java classes, and JavaServer pages for Web Application purposes.
+
+What is a Left outer join?
+Answer: This deals with SQL. Left outer join preserves the unmatched rows from the first (left) table, joining them with a NULL row in the shape of the second (right) table.
+
+What is the difference between UNION and UNION ALL?
+Answer: This deals with SQL. UNION only selects distinct values, UNION ALL selects all values.
+
+
+J2EE Question Set:-
+=================
+
+Internet programming terminology
+- What is HTTP?
+- Why HTTP is stateless?
+- What are HTTP Methods? Name few? Ans: GET, POST, PUT, DELETE, OPTIONS, HEAD, TRACE, CONNECT
+- Idempotent and Safe methods in HTTP Methods? Explain.
+- HTTP Request and HTTP Response? Explain.
+- HTTP Message status code, list few. Ans: 200 - OK, 404 - FileNotFound, 500 - InternalServerError, etc. (1xx - Information, 2xx - Success, 3xx - Redirection, 4xx - Client Error, 5xx - Server Error)
+- What is difference between URI and URL?
+- What is Protocol?
+- What is TCP/IP?
+- What is IP address?
+- What is port number?
+- What is SSL/TSL? 
+- What is client-server architecture? How it works?
+- What do you know about HTTP Header?
+- What is MIME Type?
+
+Servlet
+- What is server side programming?
+- What is entry point of web application? (or) what is deployment descriptor?
+- Explain J2EE directory structure?
+- What is Servlet?
+- How many objects of a servlet is created?
+- What is the life-cycle of a servlet? Ans: Servlet is loaded, servlet is instantiated, servlet is initialized, service the request, servlet is destroyed
+- What are the life-cycle methods for a servlet? Ans: init(), service(req, res), destory()
+- Who is responsible to create the object of servlet?
+- When servlet object is created? Ans: when 1st req arrives
+- What is difference between Get and Post method?
+- What is difference between PrintWriter and ServletOutputStream? Ans: PW is char-stream, SOS - byte-stream
+- What is difference between GenericServlet and HttpServlet?
+- What is servlet collaboration? Ans: When one servlet communicates to another servlet, it is known as servlet collaboration (RequestDispacher,sendRedirect())
+- What is the purpose of RequestDispatcher Interface?
+- Can you call a jsp from the servlet? Ans: RequestDispatcher rd=request.getRequestDispatcher("/login.jsp");rd.forward(request,response);
+- Difference between forward() method and sendRedirect() method ?
+- What is difference between ServletConfig and ServletContext?
+- What is Session Tracking?
+- What are Cookies?
+- What is difference between Cookies and HttpSession?
+- What is filter?
+- How can we perform any action at the time of deploying the project? Ans: ServletContextListener interface.
+- What is the disadvantage of cookies? Ans: disabled from Browser
+- How can we upload the file to the server using servlet? Ans: MultipartRequest from 3rd Party API
+- What is load-on-startup in servlet?
+- What if we pass negative value in load-on-startup? Ans: won't load at startup of server, load when 1st req comes
+- What is war file?
+- What are the annotations used in Servlet 3? Ans: @WebServlet, @WebFilter, @WebListener
+- Which event is fired at the time of project deployment and undeployment? Ans: ServletContextEvent
+- Which event is fired at the time of session creation and destroy? Ans: HttpSessionEvent
+- Which event is fired at the time of setting, getting or removing attribute from application scope? Ans: ServletContextAttributeEvent
+- What is the use of welcome-file-list?
+- What is the use of attribute in servlets?
+- What are different scope in Servlet? Ans: request, session, application
+- What are the types of Session Tracking ? Ans: URL rewriting, Hidden Form Fields, Cookies, Secure Socket Layer (SSL)
+- What are all the ways for session tracking? Ans: Cookies, URL rewriting, HttpSession, Hidden form fields
+- What is called Scriptlet?
+- What is the difference between Server and Container? Ans: Server is one, Server can have diff container like EJB, Servlet, JSP Containers
+
+
+    What is different between web server and application server?
+    Which HTTP method is non-idempotent?
+    What is the difference between GET and POST method?
+    What is MIME Type?
+    What is a web application and what is it’s directory structure?
+    What is a servlet?
+    What are the advantages of Servlet over CGI?
+    What are common tasks performed by Servlet Container?
+    What is ServletConfig object?
+    What is ServletContext object?
+    What is difference between ServletConfig and ServletContext?
+    What is Request Dispatcher?
+    What is difference between PrintWriter and ServletOutputStream?
+    Can we get PrintWriter and ServletOutputStream both in a servlet?
+    How can we create deadlock situation in servlet?
+    What is the use of servlet wrapper classes?
+    What is SingleThreadModel interface?
+    Do we need to override service() method?
+    Is it good idea to create servlet constructor?
+    What is difference between GenericServlet and HttpServlet?
+    What is the inter-servlet communication?
+    Are Servlets Thread Safe? How to achieve thread safety in servlets?
+    What is servlet attributes and their scopee
+    Hot.getRemoteAddr() do we call one servlet from another servlet?
+    How can we invoke another servlet in a different application?
+    What is difference between ServletResponse sendRedirect() and RequestDispatcher forward() method?
+    Why HttpServlet class is declared abstract?
+    What are the phases of servlet life cycle?
+    What are life cycle methods of a servlet?
+    why we should override only no-agrs init() method.
+    What is URL Encoding?
+    What are different methods of session management in servlets?
+    What is URL Rewriting?
+    How does Cookies work in Servlets?
+    How to notify an object in session when session is invalidated or timed-out?
+    What is the difference between encodeRedirectUrl and encodeURL?
+    Why do we have servlet filters?
+    What is the effective way to make sure all the servlets are accessible only when user has a valid session?
+    Why do we have servlet listeners?
+    How to handle exceptions thrown by application with another servlet?
+    What is a deployment descriptor?
+    How to make sure a servlet is loaded at the application startup?
+    How to get the actual path of servlet in server?
+    How to get the server information in a servlet?
+    Write a servlet to upload file on server.
+    How do we go with database connection and log4j integration in servlet?
+    How to get the IP address of client in servlet? Ans: request.getRemoteAddr()
+    What are important features of Servlet 3?
+    What are different ways for servlet authentication? Ans: HTTP Basic Authentication, HTTP Digest Authentication, HTTPS Authentication, Form Based Login
+    How can we achieve transport layer security for our web application?
+
+JSP
+- What is JSP and why do we need it?
+- What are the JSP lifecycle phases? Ans: Translation, Compilation, Class loading, Instantiation, Initialization, Request processing, Destroy
+- What are JSP lifecycle methods? Ans: jspInit(), _jspService(), jspDestory()
+- Which JSP lifecycle methods can be overridden? Ans: jspInit() - using <%! %> declarative scriptlet, jspDestory() for cleaning up resources
+- How can we avoid direct access of JSP pages from client browser?
+- What are different types of comments in JSP?
+- What is Scriptlet, Expression and Declaration in JSP?
+- What are JSP implicit objects? Ans: out, request, response, session, pageContext, execption, config, application, page
+- Can we use JSP implicit objects in a method defined in JSP Declaration?
+- Which implicit object is not available in normal JSP pages?
+- What are the benefits of PageContext implicit object?
+- How do we configure init params for JSP?
+- Why use of scripting elements in JSP is discouraged?
+- Can we define a class in a JSP Page?
+- How can we disable java code or scripting in JSP page?
+- Explain JSP Action Elements or Action Tags?
+- What is difference between include directive and jsp:include action?
+- What is JSP Expression Language and what are it’s benefits?
+- What are JSP EL implicit objects and how it’s different from JSP implicit Objects?
+- How to use JSP EL to get HTTP method name?
+- What is JSP Standard Tag Library, provide some example usage?
+- What are the types of JSTL tags?
+- What is JSP Custom Tag and what are it’s components?
+- Give an example where you need JSP Custom Tag?
+- Why don’t we need to configure JSP standard tags in web.xml?
+- How can we handle exceptions thrown by JSP service method?
+- How do we catch exception and process it using JSTL?
+- How do we print “<br> creates a new line in HTML” in JSP?
+- What is jsp-config in deployment descriptor?
+- How to ignore the EL expression evaluation in a JSP?
+- When will Container initialize multiple JSP/Servlet Objects?
+- Can we use JavaScript with JSP Pages?
+- How can we prevent implicit session creation in JSP?
+- What is difference between JspWriter and Servlet PrintWriter?
+- How can we extend JSP technology?
+- Provide some JSP Best Practices?
+
+Expression language
+- What is expression language?
+- Why we need EL?
+- How to access url params in JSP EL? Ans: ${param.compName}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

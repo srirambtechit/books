@@ -1,0 +1,39 @@
+1. Passing message between JSP and Servlet
+If you insist to use redirect instead of forward, then you have 2 options:
+
+    1. Pass the message as request parameter
+    
+	    String message = "hello";
+		res.sendRedirect("adminHome.jsp?message=" + URLEncoder.encode(message, "UTF-8"));
+	
+	so that you can display it in JSP as follows
+	
+		<p>Message: ${param.message}</p>
+
+	It's only visible in the browser address bar as well and you aren't able to pass non-standard Java objects this way.
+
+	2. Store it in session
+		String message = "hello";
+		req.getSession().setAttribute("message", message);
+		res.sendRedirect("adminHome.jsp");
+
+	so that you can display (and remove) it in JSP as follows:
+
+		<p>Message: ${message}</p>
+		<c:remove var="message" scope="session" /> 
+
+	Removing is important, otherwise it sticks there for the entire session.
+
+However, if you're open to using forward instead of redirect, it's more elegant:
+
+	String message = "hello";
+	req.setAttribute("message", message);
+	req.getRequestDispatcher("/adminHome.jsp").forward(req, res);
+
+and display it as follows in JSP
+
+    <p>Message: ${message}</p>
+    
+----------------------------------------------------------------------------------
+
+
