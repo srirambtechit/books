@@ -23,6 +23,7 @@ Spring-AOP:-
     - After Throwing Advice
     - Around Advice    
 - Target object
+- Introduction
 - Proxy object (JDK dynamic proxy, cglib proxy)
 - Weaving (compile time, load time, runtime) Spring supports only at runtime
 
