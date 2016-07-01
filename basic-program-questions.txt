@@ -1,0 +1,34 @@
+# C Program question
+
+1. Write a c program to check given number is perfect number or not.
+2. Write a c program to check given number is Armstrong number or not.
+3. Write a c program to check given number is prime number or not.
+4. Write a c program to reverse any number.
+5. Write a c program to check given number is strong number or not.
+6. Write a c program to find out sum of digit of given number.
+7. Write a c program to check given number is palindrome number or not.
+8. Write a c program to check given string is palindrome number or not.
+9. Write a c program to find out power of number.          
+10. Write a c program to add two numbers without using addition operator.
+11. Write a c program to subtract two numbers without using subtraction operator.
+12. Write a c program to find largest among three numbers using binary minus operator.
+13. Write a c program to find largest among three numbers using conditional operator
+14. Write a c program to find out generic root of any number.
+15. Write a c program to solve quadratic equation.
+16. Write a c program which passes one dimension array to function.
+17. Write a c program which passes two dimension array to function.
+18. Write a c program which passes structure to function.
+19. Write a c program for Floyd’s triangle.
+20. Write a c program to print Pascal triangle.
+21. Write a c program to generate multiplication table.
+22. Write a c program to get factorial of given number.
+23. Write a c program to find out prime factor of given number.
+24. Write a c program to find out NCR factor of given number.
+25.  Write a c program to print Fibonacci series of given range.
+26. Write a c program to print ASCII value of all characters.
+27. Write a c program to check given year is leap year or not.
+28. Write a c program which takes password from user.
+29. Write a scanf function in c which accept sentence from user.
+30. Write a scanf function in c which accept paragraph from user.
+31. Write a c program to print the all prime numbers between 1 to 300.
+32. Big list of c program examples
