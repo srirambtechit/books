@@ -1,0 +1,51 @@
+Usecase 1:-
+A system represents Student as input which can hold rollNumber, name, city, age, passOutYear.
+There is no limit in input size to the system, as it is Java based application which will take 
+any collection objects like List, Set, Map for further processing.
+
+Assume, 10 Student objects are there in which 3 are duplicate.
+1. Create a List which holds all 10 objects
+2. Create a Set which holds all 10 objects 
+   (Note: duplicate object shouldn't be there in Set)
+3. Map the student object based on their names
+4. Perform natural sorting based on their rollNumber
+5. Perform custom sorting based on their city
+6. Needs list of students with sorted order based on their city when two student 
+   having same city sort based on their passOutYear
+
+Sample data:-
+rollNumber, name, city, age, passOutYear
+124, Sriram, Madurai, 22, 2013
+147, Prakash, Salem, 24, 2008
+132, Ganesh, Chennai, 23, 2007
+100, Rajkumar, Bengaluru, 28, 2007
+108, Selvi, Ooty, 27, 2011
+157, Suganya, Pudhucherry, 24, 2009
+142, Ramesh, Tuticorin, 30, 2002
+124, Sriram, Madurai, 22, 2013
+100, Rajkumar, Bengaluru, 28, 2007
+111, Kamalesh, Chennai, 29, 2006
+
+
+
+Usecase 2:-
+Design a J2EE web application.
+Req: 
+ - Security - Login/Logout (jsessionid)
+ - Shopping cart - add, remove, update product details - UI.
+ - Product - add, remove, update to system - UI
+ - System should accept flat file feed as input
+
+product.txt
+id,name,price,qty
+100,watch,2k,10
+101,mouse,500,5
+.
+.
+.
+
+flat file validation, if duplication id comes, separate it and inform to user
+2 types of user
+ - admin
+ - e-comm website customer
+
