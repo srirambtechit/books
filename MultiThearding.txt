@@ -1,0 +1,28 @@
+Java MultiThreading Concepts:-
+
+Monitor:-
+1. Mutual Exclusive
+2. Cooperative
+
+Mutual Exclusive: 
+ - Two thread doesn't interfere with each other for sharing common data, resource
+ - called as "Monitor regions"
+ - Thread entering the Monitor
+ - Thread acquiring the Monitor
+ - Thread owning the Monitor
+ - Thread releasing/exiting the Monitor
+
+Cooperative: 
+ - More threads depends on state of the shared data or resources to work with other threads.
+ - "Wait and Notify Monitor" or "Signal and Continue Monitor"
+
+Object locking
+ - Creating Monitor in Java is done by object locking
+ - instance lock, class's class object lock are two types
+
+Monitor code block
+ - synchronized keyword used
+ - synchronized block of statements
+ - synchronized methods
+
+
