@@ -86,6 +86,33 @@ Collection
 - When does ConcurrentModificationException occur on iteration?
 - Difference between Set, List and Map Collection classes?
 
+- Which collction class provide random access of it's elements?
+- What is EnumSet?
+- Which collection classes are thead-safe?
+- What is BlockingQueue?
+- While passing a Collcetion as argument to a function, how can we make sure the function will not be able to modify it?
+- How do you handle error condition while writing sorted prodcedure or accessing stored procedure from Java?
+- What is difference between Executor.submit() and Executer.execute() method?
+- What is the benefit of Generics in Collections Framework?
+- Why Collection doesn't extend Cloneable and Serializable interfaces?
+- Why there is no method like Iterator.add() to add elements to the collection?
+- Why Iterator don't have a method to get next element directly without moving the cursor?
+- Can you write code for iterating over HashMap in Java 4 and Java 5?
+- Is it better to dsynchronze ctritical seciton of getInstacne() method or whole getInsance() method?
+- Does not overriding hashCode() method has any perfomance implication?
+- What is wrong using HashMap in multitheraded environment? When get() method to go infite loop?
+- Can we use any class as Map key?
+
+- What are different collecion views provided by Map interface?
+- What will happen if you call return satement or System.exit on try or catch block? will finally block execute?
+- If a method throws NPE in super class, can we override it with a method which throws RuntimeException?
+- What is the issue with following implementation of compareTo() method in Java?
+- Can you access non static variable in static context?
+- How do you ensure that N thread can access N resources without deadlock?
+
+
+
+
 Exception Handling
 - What is difference between checked and unchecked Exception in Java.
 - Difference between throw and throws in Java?
@@ -317,7 +344,7 @@ Servlet
 - What is the life-cycle of a servlet? Ans: Servlet is loaded, servlet is instantiated, servlet is initialized, service the request, servlet is destroyed
 - What are the life-cycle methods for a servlet? Ans: init(), service(req, res), destory()
 - Who is responsible to create the object of servlet?
-- When servlet object is created? Ans: when 1st req arrives
+- When servlet object is created? Ans: 1) when 1st req arrives; 2) if <load-on-startup> tag is used
 - What is difference between Get and Post method?
 - What is difference between PrintWriter and ServletOutputStream? Ans: PW is char-stream, SOS - byte-stream
 - What is difference between GenericServlet and HttpServlet?
